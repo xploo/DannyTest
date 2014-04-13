@@ -16,6 +16,7 @@ public class DatabaseHandler extends SQLiteOpenHelper
 	private static final String KEY_ROOMID = "roomID";
 	private static final String KEY_BEZEICHNUNG = "bezeichnung";
 	private static final String KEY_ETAGE = "etage";
+	private static final String KEY_TIMESTAMP = "timeStamp";
 	
 	
 
@@ -30,6 +31,7 @@ public class DatabaseHandler extends SQLiteOpenHelper
         String CREATE_ROOM_TABLE = "CREATE TABLE " + TABLE_ROOM + "("
                 + KEY_ROOMID + " TEXT PRIMARY KEY,"
                 + KEY_BEZEICHNUNG + " TEXT,"
+                + KEY_TIMESTAMP + " TEXT,"
                 + KEY_ETAGE + " TEXT" + ")";
         db.execSQL(CREATE_ROOM_TABLE);
 
