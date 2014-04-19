@@ -10,8 +10,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:theme="@style/AppTheme" >
+        android:icon="@drawable/ic_launcher" >
         <activity
             android:name="com.example.dannytest.MainActivity" >
             <intent-filter>
